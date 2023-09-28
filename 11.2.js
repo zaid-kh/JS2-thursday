@@ -91,7 +91,7 @@ keep it dry */
 function swapCase(text) {
   return text.split(/[., ]/).map((word, i) => {
     if (i % 2 !== 0) {
-      return word.charAt(0).toUpperCase() + word.slice(1);
+      return capitalize(word);
     } else return word;
   });
 }
